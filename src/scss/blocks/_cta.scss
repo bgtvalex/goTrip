@@ -1,0 +1,155 @@
+.cta__content {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 115px 30px;
+
+  border-radius: 60px;
+  background: var(--white);
+
+	text-align: center;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		width: 63px;
+		height: 83px;
+	}
+
+	&::before{
+		left: 74px;
+		bottom: 56px;
+		background-image: url(./../../img/04_prepare/bubble.svg);
+	}
+
+	&::after {
+		top: 74px;
+		right: 80px;
+		background-image: url(./../../img/04_prepare/bubble-up.svg);
+	}
+}
+
+.cta__title {
+  margin-bottom: 30px;
+}
+
+.cta__text {
+  margin-bottom: 70px;
+  color: var(--gray-black);
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.cta__btn {
+  padding: 25px 54px;
+  background: var(--gradient-orange);
+  border-radius: 27px;
+
+  color: var(--white);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+	transition: 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+
+
+
+/* M E D I A */
+
+@media (max-width: 1023px) {
+
+	.cta__content {
+		padding: 80px 30px;
+		border-radius: 60px;
+	}
+
+  .cta__btn {
+		padding: 20px 35px;
+		border-radius: 20px;
+		font-size: 18px;
+	}
+
+	.cta__text {
+		margin-bottom: 50px;
+		font-size: 25px;
+	}
+}
+
+@media (max-width: 766px) {
+
+	.cta__content {
+		padding: 50px 30px;
+		border-radius: 40px;
+	}
+	
+	.cta__content::before {
+		left: 15px;
+		bottom: 20px;
+	}
+
+	.cta__content::after {
+		top: 20px;
+		right: 10px;
+	}
+  
+	.cta__title {
+		margin-bottom: 20px;
+	}
+
+	.cta__text {
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+
+	.cta__btn {
+		padding: 12px 25px;
+		border-radius: 20px;
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 374px) {
+
+	.cta__content {
+		padding: 25px 30px;
+		border-radius: 25px;
+	}
+	
+	.cta__content::before,
+	.cta__content::after {
+		display: none;
+	}
+  
+	.cta__title {
+		margin-bottom: 20px;
+	}
+
+	.cta__text {
+		margin-bottom: 30px;
+		font-size: 18px;
+	}
+
+	.cta__btn {
+		padding: 12px 25px;
+		border-radius: 20px;
+		font-size: 16px;
+	}
+}

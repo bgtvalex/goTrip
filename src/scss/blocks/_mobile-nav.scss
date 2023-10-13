@@ -1,0 +1,109 @@
+.mobile-nav {
+  position: fixed;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
+  background: linear-gradient(132deg, #428e5f -17.38%, #112120 78.4%), #204434;
+  transition: all 0.2s ease-in;
+  font-size: 22px;
+}
+
+.mobile-nav--open {
+  top: 0;
+}
+
+.mobile-nav .nav__list {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: start;
+  align-items: center;
+  gap: 20px;
+
+}
+
+.nav__list a {
+  position: relative;
+}
+
+.mobile-nav .nav__list .active a::after,
+.mobile-nav .nav__list a:hover::after {
+  display: none;
+  // content: '';
+  // position: absolute;
+  // display: block;
+  // bottom: -6px;
+  // left: 0;
+  // right: 10px;
+  // height: 4px;
+  // background-color: var(--gray-light);
+  // border-radius: 100px;
+}
+
+// .footer .nav__list a{
+//   color: var(--gray-black);
+// }
+
+// .mobile-nav .footer .nav__list .active a::after,
+// .mobile-nav .footer .nav__list a:hover::after {
+//   display: none;
+// }
+
+// .mobile-nav .footer .nav__list .active a,
+// .mobile-nav .footer .nav__list a:hover {
+//   display: none;
+//   color: var(--accent);
+// }
+
+.mobile-nav .nav__login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 22px;
+}
+
+// .footer .nav__login {
+//   color: var(--gray-black);
+//   gap: 66px;
+// }
+
+.mobile-nav .nav__login-btn {
+  padding: 13px 44px;
+  border-radius: 100px;
+  background: var(--gradient-orange);
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+// .footer .nav__login-btn {
+//   color: var(--white);
+// }
+
+.mobile-nav .mobile-nav-btn {
+  display: none;
+}

@@ -1,0 +1,27 @@
+:root {
+	--container-width: 1270px;
+	--container-padding: 15px;
+
+	--font-main: 'Poppins', sans-serif;
+
+	--page-bg: #F6F6F6;
+
+	--text-color: #0f1f1c;
+	--white: #fff;
+	--gray: rgba(255, 255, 255, .5);
+	--gray-black: rgba(15, 31, 28, .5);
+	--gray-light: #C4C4C4;
+	--accent: #ff794e;
+
+	--gradient-orange: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%);
+
+
+	--laptop-size: 1199px;
+	--tablet-size: 959px;
+	--mobile-size: 599px;
+}
+
+.dark {
+    --page-bg: #252526;
+    --text-color: #fff;
+}

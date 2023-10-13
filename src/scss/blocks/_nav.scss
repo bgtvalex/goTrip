@@ -1,0 +1,150 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+
+.logo a {
+  color: inherit;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo--footer {
+  color: var(--accent);
+  align-items: center;
+  display: flex;
+
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+.nav__list a .nav__list--footer a {
+  position: relative;
+}
+
+.nav__list .active a::after,
+.nav__list a:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: -6px;
+  left: 0;
+  right: 10px;
+  height: 4px;
+  background-color: var(--gray-light);
+  border-radius: 100px;
+}
+
+.nav__list--footer a {
+  color: var(--gray-black);
+}
+
+.nav__list--footer .active a::after,
+.nav__list--footer a:hover::after {
+  display: none;
+}
+
+.nav__list--footer .active a,
+.nav__list--footer a:hover {
+  color: var(--accent);
+}
+
+.nav__login,
+.nav__login--footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav__login--footer {
+  color: var(--gray-black);
+  gap: 66px;
+}
+
+.nav__login-btn {
+  padding: 13px 44px;
+  border-radius: 100px;
+  background: var(--gradient-orange);
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.nav__login-btn--footer {
+  color: var(--white);
+}
+
+.mobile-nav-btn,
+.footer .mobile-nav-btn {
+  display: none;
+}
+
+
+/* M E D I A */
+
+@media (max-width: 1023px) {
+  .nav--footer {
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .nav__list,
+  .nav__login {
+    display: none;
+  }
+
+  .footer .nav__list--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer .nav__login--footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .mobile-nav-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 766px) {
+
+  .footer .nav--footer {
+    flex-direction: column;
+  }
+}
