@@ -1,7 +1,7 @@
 # project: GoTrip
 
 ### Technologies:
-* HTML, CSS, SASS, JS, Gulp, Webpack.
+* HTML, CSS, SASS, JS, jQuery, Gulp, Webpack.
 
 ### Libraries:
 * [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) - Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.
