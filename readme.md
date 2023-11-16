@@ -1,5 +1,7 @@
 # project: GoTrip
 
+* [demo](https://bgtvalex.github.io/goTrip/)
+
 ### Technologies:
 * HTML, CSS, SASS, JS, jQuery, Gulp, Webpack.
 
